@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Recipe Generator</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation-->
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <div class="container px-5">
+      <a class="navbar-brand fw-bold" href="index.html"><img src="assets/img/logo.png" style="max-width: 30%"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+          <li class="nav-item"><a class="nav-link me-lg-3" href="#download">LOG IN</a></li>
+        </ul>
+        <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+          data-bs-target="#feedbackModal">
+          <span class="d-flex align-items-center">
+            <span class="small">SIGN UP&nbsp;</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mashead header-->
+
+  <header class="masthead">
+    <div class="container px-5">
+      <div class="d-flex flex-lg-row justify-content-center align-items-center">
+        <h2>Recipe Generator</h2>
+
+        <div class="flex-grow-1 offset-sm-1">
+          <input class="rounded-3" id="tags" type="text"
+          name="search" placeholder="Search for recipes...">
+        
+          <button id ="add" class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0 ms-3" data-bs-toggle="modal"
+           data-bs-target="#feedbackModal">
+            <span class="d-flex align-items-center">
+              <span class="small">SEARCH&nbsp;</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features section-->
+  <section id="features">
+    <div class="container px-5">
+		
+      <h3>Categorize by Type</h3>
+     <table class="d-flex justify-content-center">
+		 <tr class="row1">
+		    <td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">MEDITERRANEAN</span>
+                  <a href="#!"></a>
+            </div>
+				  </td>
+				<td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">&nbsp; &nbsp; &nbsp; &nbsp; CHINESE&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                  <a href="#!"></a>
+            </div>
+				  </td>
+					 <td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">&nbsp; &nbsp; &nbsp; &nbsp; ITALIAN&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>
+                  <a href="#!"></a>
+            </div>
+				  </td>
+					 <td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">&nbsp; &nbsp; &nbsp; AMERICAN&nbsp; &nbsp; &nbsp;&nbsp;</span>
+                  <a href="#!"></a>
+            </div>
+				  </td>
+          <td>
+            <div class="d-flex flex-column flex-lg-row align-items-center">
+                  <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                    data-bs-target="#feedbackModal">
+                    <span class="d-flex align-items-center">
+                      <span class="large">&nbsp; &nbsp; &nbsp; CARRIBEAN &nbsp; &nbsp;&nbsp;</span>
+                      <a href="#!"></a>
+                </div>
+          </td>
+			</tr>
+			<tr class="row2">
+		    <td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">&nbsp; &nbsp; VIETNAMESE&nbsp; &nbsp;&nbsp;</span>
+                  <a href="#!"></a>
+            </div>
+			  </td>
+				<td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">&nbsp; &nbsp; &nbsp; &nbsp;KOREAN&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span>
+                  <a href="#!"></a>
+            </div>
+			  </td>
+					 <td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">&nbsp; &nbsp; &nbsp; &nbsp;GERMAN&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                  <a href="#!"></a>
+            </div>
+				  </td>
+					 <td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">&nbsp; &nbsp;LOW-FAT DIET&nbsp; &nbsp;</span>
+                  <a href="#!"></a>
+            </div>
+				  </td>
+          <td>
+            <div class="d-flex flex-column flex-lg-row align-items-center">
+                  <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                    data-bs-target="#feedbackModal">
+                    <span class="d-flex align-items-center">
+                      <span class="large">&nbsp; &nbsp; &nbsp; &nbsp; SPANISH &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                      <a href="#!"></a>
+                </div>
+              </td>
+			</tr>	
+			<tr class="row3">
+		    <td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">&nbsp; &nbsp; &nbsp; &nbsp;MEXICAN&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                  <a href="#!"></a>
+            </div>
+				  </td>
+				<td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">&nbsp; &nbsp; &nbsp; JAPANESE&nbsp; &nbsp; &nbsp;&nbsp;</span>
+                  <a href="#!"></a>
+            </div>
+				  </td>
+					 <td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">&nbsp; &nbsp; &nbsp; MAIN DISH&nbsp; &nbsp; &nbsp;</span>
+                  <a href="#!"></a>
+            </div>
+				  </td>
+					 <td>
+				<div class="d-flex flex-column flex-lg-row align-items-center">
+              <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <span class="d-flex align-items-center">
+                  <span class="large">&nbsp; &nbsp;EASY &amp; SIMPLE&nbsp;&nbsp;</span>
+                  <a href="#!"></a>
+            </div>
+				  </td>
+          <td>
+            <div class="d-flex flex-column flex-lg-row align-items-center">
+                  <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
+                    data-bs-target="#feedbackModal">
+                    <span class="d-flex align-items-center">
+                      <span class="large">&nbsp; &nbsp; &nbsp; &nbsp; INDIAN &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                      <a href="#!"></a>
+                </div>
+              </td>
+			</tr>
+		</table>
+    <br>
+    <div class="d-flex flex-lg-row justify-content-center">
+      <div class="click1 ms-3">
+        <i class="bi bi-chevron-down"></i>
+      </div>
+    </div>
+   				  
+    </div>
+
+    <br>
+
+    <div class="container px-5">
+      <h3>Best Matched</h3>
+		  <h5>We found <strong>8 results</strong> that matches to your pantry list</h5>
+   
+<!-- ROW 1 -->
+      <div class="d-flex flex-lg-row justify-content-evenly">
+        <div class="card d-flex flex-lg-column justify-content-start col-md-3 mb-2">
+          <div class="d-flex justify-content-end">
+            <i class="bi bi-heart"></i>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img src="assets/img/recipe-1.png" alt="Avatar" style="width:80%">
+          </div>
+          <div>
+            <h4>Creamy Mushroom Pasta</h4>
+            <h5>with garlic butter and parmesan</h5>
+          </div>
+          <div>
+            <h6>30 MINS</h6>
+          </div>
+        </div>
+        <div class="card d-flex flex-lg-column justify-content-start col-md-3 mb-2">
+          <div class="d-flex justify-content-end">
+            <i class="bi bi-heart"></i>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img src="assets/img/recipe-2.png" alt="Avatar" style="width:80%">
+          </div>
+          <div>
+            <h4>Stuffed Portobello Mushroom</h4>
+            <h5>with spinach artichoke dip</h5>
+          </div>
+          <div>
+            <h6>30 MINS</h6>
+          </div>
+        </div>
+        <div class="card d-flex flex-lg-column justify-content-start col-md-3 mb-2">
+          <div class="d-flex justify-content-end">
+            <i class="bi bi-heart"></i>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img src="assets/img/recipe-3.png" alt="Avatar" style="width:80%">
+          </div>
+          <div>
+            <h4>Cream of Mushroom Soup</h4>
+            <h5>with white wine</h5>
+          </div>
+          <div>
+            <h6>10 MINS</h6>
+          </div>
+        </div>
+
+        <div class="card d-flex flex-lg-column justify-content-start col-md-3 mb-2">
+          <div class="d-flex justify-content-end">
+            <i class="bi bi-heart"></i>
+          </div>
+          <div class="d-flex justify-content-center">
+            <img src="assets/img/recipe-4.png" alt="Avatar" style="width:80%">
+          </div>
+          <div>
+            <a href="recipe.html">
+              <h4>Pantry Pasta</h4>
+            </a>
+            <h5>with garlic and butter</h5>
+          </div>
+          <div>
+            <h6>15 MINS</h6>
+          </div>
+        </div>
+    </div>
+<!-- ROW 2 -->
+    <div class="d-flex flex-lg-row justify-content-evenly">
+      <div class="card d-flex flex-lg-column justify-content-start col-md-3 mb-2">
+        <div class="d-flex justify-content-end">
+          <i class="bi bi-heart"></i>
+        </div>
+        <div class="d-flex justify-content-center">
+          <img src="assets/img/recipe-5.png" alt="Avatar" style="width:80%">
+        </div>
+        <div>
+          <h4>Sauteed Mushrooms</h4>
+          <h5>with garlic butter</h5>
+        </div>
+        <div>
+          <h6>10 MINS</h6>
+        </div>
+      </div>
+
+
+      <div class="card d-flex flex-lg-column justify-content-start col-md-3 mb-2">
+        <div class="d-flex justify-content-end">
+          <i class="bi bi-heart"></i>
+        </div>
+        <div class="d-flex justify-content-center">
+          <img src="assets/img/recipe-6.png" alt="Avatar" style="width:80%">
+        </div>
+        <div>
+          <h4>Aglio E Olio</h4>
+          <h5>with garlic and red pepper flakes</h5>
+        </div>
+        <div>
+          <h6>20 MINS</h6>
+        </div>
+      </div>
+      <div class="card d-flex flex-lg-column justify-content-start col-md-3 mb-2">
+        <div class="d-flex justify-content-end">
+          <i class="bi bi-heart"></i>
+        </div>
+        <div class="d-flex justify-content-center">
+          <img src="assets/img/recipe-7.png" alt="Avatar" style="width:80%">
+        </div>
+        <div>
+          <h4>Garlic Confit</h4>
+          <h5>paired with bread</h5>
+        </div>
+        <div>
+          <h6>10 MINS</h6>
+        </div>
+      </div>
+      <div class="card d-flex flex-lg-column justify-content-start col-md-3 mb-2">
+        <div class="d-flex justify-content-end">
+          <i class="bi bi-heart"></i>
+        </div>
+        <div class="d-flex justify-content-center">
+          <img src="assets/img/recipe-8.png" alt="Avatar" style="width:80%">
+        </div>
+        <div>
+          <h4>Garlic Mushroom Pasta</h4>
+          <h5>with parmesan cheese</h5>
+        </div>
+        <div>
+          <h6>25 MINS</h6>
+        </div>
+      </div>
+      
+    </div>
+
+      
+    
+      
+    
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <small>Copyright &copy; 2022 Whats On The Menu | Caroline, Crystal & Danielle </small>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
